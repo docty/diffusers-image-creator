@@ -4,7 +4,7 @@ import torch
 from PIL import Image
 
 
-st.title("Image Generation")
+st.title("Image Generation:")
 
  
 @st.cache_resource
