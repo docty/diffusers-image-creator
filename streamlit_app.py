@@ -1,3 +1,7 @@
 import streamlit as st
+from diffusers import DiffusionPipeline
+import torch
+from PIL import Image
 
-st.title("Text-to-Image Generation using DiffusionPipeline")
+
+st.title("Image Generation using DiffusionPipeline")
