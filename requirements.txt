@@ -1,3 +1,5 @@
 streamlit
 diffusers
 torch
+torchvision
+transformers
