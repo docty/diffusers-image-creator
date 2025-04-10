@@ -15,7 +15,7 @@ def load_pipeline():
     )
     pipe.to("cuda" if torch.cuda.is_available() else "cpu")
 
-    pipe.scheduler = DPMSolverMultistepScheduler.from_config(pipeline.scheduler.config)
+    pipe.scheduler = DPMSolverMultistepScheduler.from_config(pipe.scheduler.config)
 
     pipe.enable_attention_slicing()
   
@@ -27,5 +27,5 @@ prompt = st.text_input("Enter a prompt to generate an image:", value="pipeline u
 
 if st.button("Generate Image"):
     with st.spinner("Generating image..."):
-        image = pipe(prompt).images[0]
+        image = pipeline(prompt).images[0]
         st.image(image, caption="Generated Image", use_column_width=True)
