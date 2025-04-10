@@ -1,7 +1,7 @@
 import streamlit as st
 #from diffusers import DiffusionPipeline, DPMSolverMultistepScheduler
 import torch
-from PIL import Image
+#from PIL import Image
 
 
 st.title("Image Generation:2")
