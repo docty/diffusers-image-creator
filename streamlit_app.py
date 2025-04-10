@@ -4,7 +4,7 @@ import torch
 from PIL import Image
 
 
-st.title("Image Generation:1")
+st.title("Image Generation:2")
 
  
 @st.cache_resource
@@ -21,7 +21,7 @@ def load_pipeline():
   
     return pipe
 
-pipeline = load_pipeline()
+#pipeline = load_pipeline()
 
 prompt = st.text_input("Enter a prompt to generate an image:", value="pipeline under the sea")
 
