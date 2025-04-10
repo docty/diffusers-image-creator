@@ -10,7 +10,7 @@ st.title("Image Generation:2")
 @st.cache_resource
 def load_pipeline():
     pipe = DiffusionPipeline.from_pretrained(
-        "CompVis/stable-diffusion-v1-4",
+        "stable-diffusion-v1-5/stable-diffusion-v1-5",
         torch_dtype=torch.float16,
     )
     pipe.to("cuda" if torch.cuda.is_available() else "cpu")
