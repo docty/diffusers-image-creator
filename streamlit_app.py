@@ -21,7 +21,7 @@ def load_pipeline():
   
     return pipe
 
-#pipeline = load_pipeline()
+pipeline = load_pipeline()
 
 prompt = st.text_input("Enter a prompt to generate an image:", value="pipeline under the sea")
 
